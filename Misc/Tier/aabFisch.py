@@ -1,4 +1,4 @@
-from Tier import Tier
+from Misc.Tier import Tier
 class Fisch (Tier):
     def __init__(self,name,alter):
         Tier.__init__(self,name,alter)

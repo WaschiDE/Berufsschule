@@ -1,6 +1,6 @@
-from Tier.aabKatze import Katze
-from Tier.aabHund import Hund
-from Tier.aabFisch import Fisch
+from Misc.Tier.aabKatze import Katze
+from Misc.Tier.aabHund import Hund
+from Misc.Tier.aabFisch import Fisch
 
 
 

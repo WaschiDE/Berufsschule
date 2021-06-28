@@ -3,7 +3,7 @@ textList = file.readlines()
 file.close()
 textList.pop(0)
 textList.pop(0)
-max = ["",0]
+max = ["", 0]
 for value in textList:
     datenList = value.split(";")
     prozessor = datenList[1]
@@ -16,10 +16,9 @@ for value in textList:
             punktePreis = 3
         else:
             punktePreis = 2
-    punkteQualitaet = round((float(wertungSpiele) + 3*float(wertungAnwendung))/4/100*3)
+    punkteQualitaet = round((float(wertungSpiele) + 3 * float(wertungAnwendung)) / 4 / 100 * 3)
 
-    nutzwert = (punktePreis + punkteQualitaet) /2
+    nutzwert = (punktePreis + punkteQualitaet) / 2
     if nutzwert > max[1]:
-        max= [prozessor,nutzwert]
-print(max[0], " ist mit Nutzert: ", max[1], " der beste Prozessor")
-
+        max = [prozessor, nutzwert]
+print(max[0], " ist mit Nutzert:", max[1], "der beste Prozessor")

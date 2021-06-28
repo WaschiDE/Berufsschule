@@ -4,6 +4,9 @@ from tkinter import ttk
 
 
 # GUI Klassen erstellung
+from LF5.Datenverarbeitung.ZahlensystemUmrechner import zahlenSystemUmrechner
+
+
 class Application(Frame):
     def __init__(self, master=None):
         # Metadaten
