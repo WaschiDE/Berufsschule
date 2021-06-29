@@ -1,14 +1,14 @@
 file = open("benchmark.csv")
-textList = file.readlines()
+inhalt = file.readlines()
 file.close()
-textList.pop(0)
-textList.pop(0)
+inhalt.pop(0)
+inhalt.pop(0)
 max = ["", 0]
-for value in textList:
+for value in inhalt:
     datenList = value.split(";")
     prozessor = datenList[1]
-    wertungSpiele = datenList[3]
-    wertungAnwendung = datenList[4]
+    wertungSpiele = float(datenList[3])
+    wertungAnwendung = float(datenList[4])
     if "Ryzen 9" in prozessor or "Core i9" in prozessor:
         punktePreis = 1
     else:
@@ -16,7 +16,7 @@ for value in textList:
             punktePreis = 3
         else:
             punktePreis = 2
-    punkteQualitaet = round((float(wertungSpiele) + 3 * float(wertungAnwendung)) / 4 / 100 * 3)
+    punkteQualitaet = round((wertungSpiele + 3 * wertungAnwendung) / 4 / 100 * 3)
 
     nutzwert = (punktePreis + punkteQualitaet) / 2
     if nutzwert > max[1]:

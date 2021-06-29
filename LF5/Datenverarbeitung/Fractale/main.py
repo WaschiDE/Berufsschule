@@ -23,7 +23,7 @@ class Application(Frame):
         self.franktalart.current(0)
         self.franktalart.grid(row=0, column=1)
 
-        self.stufe = ttk.Combobox(root, values=["0", "1", "2", "3", "4", "5", "6"])
+        self.stufe = ttk.Combobox(root, values=["0", "1", "2", "3", "4", "5", "6", "7", "8"])
         self.stufe.current(0)
         self.stufe.grid(row=1, column=1)
 
